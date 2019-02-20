@@ -1,0 +1,428 @@
+body{
+
+    display: block;
+    box-sizing: border-box;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif ;
+    max-width: 1024px; 
+}
+
+header{
+    color: white;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    width: 270px;
+    height: 75px ;
+    margin-top: 45px;
+    border-color: #cccccc;
+    }
+
+.header_div{
+
+            margin-top: 30px;
+            margin-bottom : 0px;
+            position: relative;
+            padding-left: 30px;
+}
+.Mike{  margin: 0px;
+         padding-top: 20px;
+         padding-left: 5px;
+         position: relative;
+         background-color:#4aaaa5;
+        max-width: 250px;
+       
+}
+
+
+
+#div_ul{
+     float: right;
+     max-width:320px;
+    height: 45px;
+    margin-top: -60px;
+}
+
+li{
+   
+    display:inline;
+    display:inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-left: solid 1px black;
+    zoom:1;
+    /*
+    additional styles to make it look nice
+    */
+ }
+ li:first-child{
+    border-left: none;
+}
+
+    
+.contentP_div{ background-image: url("../images/sandpaper.png");
+         
+         border-bottom: 4px solid #4aaaa5;
+         border-top: 2px solid rgb(235, 228, 228);
+        margin-top: 0px;
+        height: auto;
+        padding-top: 8px;
+        padding-bottom: 40px;
+        
+}
+
+hr {
+     margin-left: 20px;
+     margin-right: 20px;
+     width: 90%;
+    }
+#Pic{ float: left;
+    margin: 0 20px 20px 0;
+    padding-left: 10px;
+
+}
+
+p{  margin-right: 15px;
+    text-align: left;
+    text-indent: 2em;
+    margin-left: 20px;
+}    
+.content_section{ 
+            width: 92%;
+            background-color:#ffffff;
+            margin: 0 auto;
+            border: 3px solid #dddddd;
+            overflow: auto;
+            }
+
+/* this is for the grid section  portofolio   */
+ .content_sectionP{ 
+              max-width: 600px;
+                background-color:#ffffff;
+                margin-left: 29px;
+                border: 3px solid #dddddd;
+    }
+
+    .contentP_div h1{ color:#4aaaa5;
+                             padding-left: 20px;
+
+
+                     }
+           
+
+.grid{ display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: repeat(3,120px);
+        grid-column-gap:  35px;
+        grid-row-gap: 25px;
+        margin-top: 20px;
+        justify-items:center;
+        justify-content: center;
+        width: 350px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .Pic{
+        position: relative;
+        width: 160px;
+        height: 120px;
+        object-fit: cover;
+        z-index: 0;
+
+    }
+           
+    .port_label{
+                 position: absolute;
+                background-color: #4aaaa5;
+                color: white;
+                font-family:'Georgia', Times, Times New Roman, serif;
+                margin:0;
+                height: 20px;
+                width: 160px;
+                text-align: center;
+                margin-top: -30px;
+                margin-left: 0px;
+                z-index: 4;
+                }
+
+                    
+    
+    }
+
+
+
+.content_section h1{ clear: both;
+                } 
+           
+                                 
+
+form{ padding-left:20px;}
+
+
+.name, .email{
+         width: 90%; 
+         height: 20px; 
+         margin-top: 5px;
+}
+
+.message{ width: 90%;
+          height: 200px; 
+          margin-top: 5px;
+
+}
+
+.submit{   margin-top: 10px;
+           margin-bottom: 10px;
+           background-color: #4aaaa5;
+           height: 35px;
+           width: 85px;
+        
+        }
+
+ footer{
+    background-color:#666666;
+    margin-bottom: 0;
+    height: 35px;
+    position: absolute;
+    width: 1024px;
+ }
+
+ .copyright{ color:white;
+             margin: auto;
+             width: 100px;
+             padding-top: 15px;
+             font-size: 10px;
+             
+             }
+/*                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@  Media Queries Section      */
+          
+
+
+             /* Extra large devices (large laptops and desktops, 1200px and up) */
+                @media only screen and (max-width: 980px)
+                {  
+                    body{
+                                       
+                         width:92%;
+
+                    }
+
+                             /*.header_div{
+                                                                                           
+                                   background-color:#666666;
+                                   margin-bottom: 0;
+                                   height: 35px;
+                                   position: absolute;
+                                 
+                                } */
+                                 
+                               .content_section{ 
+                                         width: 92%;
+                                            
+                                 }
+                
+                                  .content_sectionP{ 
+                                       width: 57%;
+                                         /*
+                                          background-color:#ffffff;
+                                          margin-left: 29px;
+                                          border: 3px solid #dddddd; */
+                                          
+                                     }
+
+                              footer{                                               
+                                     width: 92%;
+                                    }
+
+                
+                }
+                             
+           
+             @media only screen and (max-width: 768px)
+             {
+                body{  width: 80%;
+                    
+                }
+             
+               /* .grid{ /*display: grid;
+                      grid-template-columns:150px ;
+                      grid-auto-rows: minmax(120px, auto);
+                      width: 225px;} */
+                                
+                /* ##############################################################*/                                                          
+                
+                .grid{ width:280px;
+                    grid-template-columns: 300px;
+                    grid-template-rows: repeat(5,220px);
+                    grid-row-gap: 5px;
+                    grid-column-gap:0px;
+                        }
+                
+                
+                        .port {position: relative;
+                            height: 250px;
+                            width:  200px;
+                          
+                             }
+                      
+                        .Pic{ 
+                            width: 200px;
+                            height:  200px;
+                            object-fit: fill;
+
+                       }
+
+
+                       
+                       .port_label{ height: 26px;
+                        width: 100%;
+                        margin-top: -20px;}
+
+
+                       /*############################################################################# */
+
+
+
+                
+                .Mike{
+                       
+                       font-size: 26px;
+                }
+                header { width: 200px;           
+                        
+                        }
+                        
+                        footer{                                          
+                                width: 80%;
+                         }
+
+                    }
+
+
+            @media only screen and (max-width: 640px) 
+            {
+               body{
+                     width: 80%;
+                     min-width: 375px;
+                     margin-left:0px;
+                    }
+                                
+         
+
+               .header_div{  height: 60px;
+                width: 640px;
+                padding-left:0px;
+                margin-top: 0px;
+                }
+
+               header{ 
+                height: 60px;
+                margin-top:-8px;
+                width: 640px;
+                
+              
+                }
+
+
+                #div_ul{
+                        float: none;
+                        max-width:320px;
+                         height: 45px;
+                         margin-top: -60px;
+                        margin-left: 95px;
+               }
+
+
+             
+               .Mike{ 
+                     margin-top: 0px;
+                      padding-left:0px;
+                      padding-right: 0px;
+                      padding-top: 10px;
+                      width: 640px;
+                      height: 50px;
+                      text-align: center;
+                     
+                      margin-left: 90px;
+                      
+                    }
+                  #ul_top{ margin-top: 66px;
+                            padding-left: 0px;    
+                         }
+
+                         .grid{ width:280px;
+                            grid-template-columns: 300px;
+                            grid-template-rows: repeat(5,220px);
+                            grid-row-gap: 5px;
+                            grid-column-gap:0px;
+                           
+                        }
+                        
+                                                           
+                          
+                         .About{padding-left: 4px;   }
+                        
+                         
+
+                         .port {position: relative;
+                            height: 250px;
+                            width:  200px;
+                          
+                             }
+
+
+                         .Pic{ 
+                              width: 200px;
+                              height:  200px;
+                              object-fit: fill;
+
+                         }
+
+                          
+                            
+                            .port_label{ height: 26px;
+                                        width: 100%;
+                                        margin-top: -20px;}
+
+                                       .contentP_div{
+                                            width:100%;
+                                            min-width: 365px;
+                                            margin-top:30px;    
+                                            height: auto;                                                 
+                                            } 
+
+
+                                    .content_section{
+                                                     width:90%;
+                                                     margin-left: 18px;  
+                                                    
+                                                    
+                                                    }
+
+                                        p{ font-size: 15px;
+
+                                            }
+
+                                            #Pic{ height: 150px;
+                                                  width : 150px;
+
+                                            }
+                                       
+
+                                        .content_sectionP{
+                                                            width:85%;
+                                                            margin-left: 10px; 
+                                                            vertical-align: middle;
+                                                           }
+
+                                        
+                                        
+                                        hr{ width: 80%;}
+                                        footer{                                     
+                                            width: 80%;
+                                            min-width: 375px;
+                                         }
+                                         .name, .email, .message{ width: 80%;}
+
+            }
+
+
